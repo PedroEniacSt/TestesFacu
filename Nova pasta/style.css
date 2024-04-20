@@ -27,14 +27,38 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5.2px);
 -webkit-backdrop-filter: blur(5.2px);
 border: 1px solid rgba(255, 255, 255, 0.3);
+padding: 25px 25px;
+opacity: 1;
+animation-name: fadeIn;
+animation-iteration-count: 1;
+animation-timing-function: ease-in;
+animation-duration: 1s;
 
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .forms{
+
 }
 
 input{
-    
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid aliceblue;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+input::placeholder{
+    color: aliceblue;
+    text-decoration: none;
 }
 
 button{
@@ -44,14 +68,30 @@ button{
     text-transform: capitalize;
     border-radius: 10px;
     border: 1px solid aliceblue;
-    padding: 10px 15px;
+    height: 40px;
+    width: 125px;
     background-color: transparent;
+    color: aliceblue;
+    transition: 0.3s ease;
 
 }
 
 
-button :hover{
-    
+button:hover{
+    transition: 0.3s ease;
+    height: 55px;
+    width: 175px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
+label{
+    text-transform: capitalize;
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: bold;
+}
 
+h1{
+    color: aliceblue;
+}
